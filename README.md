@@ -1,0 +1,2 @@
+# puffin-page
+A Ultimate Coming Soon Responsive Template
