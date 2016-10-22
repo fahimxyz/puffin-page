@@ -1,0 +1,71 @@
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+
+
+}
+
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+.container {width:300px}
+.first-layer .logo img {
+  width: 140px;
+}
+.first-layer .layer-content .intro-text h2 {
+  font-size: 30px;
+}
+.first-layer .layer-content .intro-text p {
+  font-size: 17px;
+}
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+
+}
+
+
+
+/*
+
+@media (max-height: 900px)  {
+.first-layer .layer-content {
+    top: 70px;
+  }
+.first-layer .layer-content .intro-text h2 {
+  font-size: 48px;
+  margin-bottom: 18px;
+  margin-top: 8px;
+}
+
+.contact-form form .form-group {
+  margin-bottom: 15px;
+}
+.title h1 {
+  margin-bottom: 46px;
+}
+.contact-form form .form-group textarea {
+  min-height: 165px;
+}
+}
+
+@media (max-height: 768px)  {
+  .first-layer .layer-content {
+      top: 40px;
+    }
+    .page-section.fourth-layer {
+      padding-top: 40px;
+    }
+.page-section.second-layer {
+  padding-top: 60px;
+}
+}
+*/

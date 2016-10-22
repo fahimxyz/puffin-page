@@ -1,0 +1,635 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name:
+    Template URI:
+    Description:
+    Author:
+    Author URI:
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+
+    1. Theme Default CSS (body, link color, section etc)
+
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+html, body {height: 100%;}
+.floatleft {float:left}
+.floatright {float:right}
+.alignleft {float:left;margin-right:15px;margin-bottom: 15px}
+.alignright {float:right;margin-left:15px;margin-bottom: 15px}
+.aligncenter {display:block;margin:0 auto 15px}
+a:focus {outline:0px solid}
+img {max-width:100%;height:auto}
+.fix {overflow:hidden}
+p {margin:0 0 15px;}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+}
+a {transition: all 0.3s ease 0s;text-decoration:none;}
+a:hover {
+  color: #ec4445;
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+ul{
+list-style: outside none none;
+margin: 0;
+padding: 0
+}
+
+body {
+  font-family: open sans;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: roboto;
+}
+*::-moz-selection {
+  background-color: transparent;
+  color: #ea1d63;
+}
+*::selection {
+  background-color: transparent;
+  color: #ea1d63;
+}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/*----------------------------------------*/
+/*  2. CSS  For Preloader
+/*----------------------------------------*/
+#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #fff url('img/loader.gif') no-repeat center center; }
+
+/*----------------------------------------*/
+/*  2. CSS  For All Section
+/*----------------------------------------*/
+.page-section{
+  height: 100%;
+  width: 100%;
+}
+.page-section .layer-wrapper {
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.page-section.first-layer .layer-wrapper::after {
+  background: rgba(0, 0, 0, 0.6) url("img/overlay.png") repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.layer-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*----------------------------------------*/
+/*  3.  First Layer CSS
+/*----------------------------------------*/
+.page-title {
+  background: #3c948b none repeat scroll 0 0;
+  left: 0;
+  position: absolute;
+  top: -100px;
+  transition: all 1s ease 2s;
+  width: 100%;
+}
+.page-title h1 {
+  color: #fff;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 80px;
+  margin: 0 0 0 -125px;
+  opacity: 0;
+  text-transform: uppercase;
+}
+.page-section.active .page-title {
+  height: 80px;
+  top: 0;
+  transition: all 0.4s ease 1s;
+}
+.page-section.active .page-title h1 {
+  margin: 0;
+  opacity: 1;
+  text-align: center;
+  transition: all 0.4s ease 1.4s;
+}
+
+#page-wrapper .first-layer {
+  background-color: #000;
+  background-image: url("img/bg1.jpg");
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+.first-layer .logo{
+  position: relative;
+}
+.first-layer .logo img{
+  width:200px;
+}
+.first-layer .countdown-area {
+  color: #fff;
+}
+.first-layer .countdown-area .cdown {
+  display: inline-block;
+  padding: 10px 20px 0;
+}
+.first-layer .countdown-area div {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  margin-top: 15px;
+  padding: 0 25px;
+}
+.first-layer  .layer-content {
+  position: relative;
+  z-index: 99999;
+}
+.first-layer .layer-content .intro-text h2 {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: roboto slab;
+  font-size: 54px;
+  font-weight: 200;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-transform: capitalize;
+}
+.first-layer .layer-content .intro-text p {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 33px;
+}
+.first-layer .countdown-area .cdown p {
+  text-transform: uppercase;
+}
+.first-layer .countdown-area .cdown .time-count {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+ .email-hunter form {
+  display: inline-block;
+  margin-top: 50px;
+  position: relative;
+  width: 400px;
+}
+.email-hunter input {
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 36px;
+  padding-left: 10px;
+  width: 100%;
+  background: none;
+  color:#fff;
+}
+.email-hunter input:active{
+  color: #3c948b
+}
+.email-hunter input:focus {
+  border: 1px solid rgba(60,148,139,.7);
+  transition: all 0.4s ease 0s;
+  color: #3c948b
+}
+.email-hunter button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 0 2px 2px 0;
+  color: #fff;
+  cursor: pointer;
+  height: 100%;
+  padding: 0 15px;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
+  border-left: 1px solid rgba(255,255,255,.2);
+  transition: all .3s ease 0s;
+}
+.email-hunter button:hover{
+  background: #3c948b;
+}
+
+/*==============  Social Link ===============*/
+
+.social-link {
+  margin-top: 40px;
+}
+.social-link a {
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  height: 25px;
+  line-height: 25px;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  width: 25px;
+  z-index: 999999999;
+}
+.social-link a:hover{
+  color: rgba(60, 148, 139,1);
+}
+/* default */
+.social-link.default a::before {
+  border: 1px solid #444;
+  border-radius: 2px;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(45deg);
+  width: 100%;
+}
+.social-link.default a:hover:before {
+  border: 1px solid rgba(60, 148, 139,1);;
+}
+.social-link a i{}
+  .social-link.default a:hover{
+    color: rgba(60, 148, 139,1);;
+  }
+/* Box */
+.social-link.box a {
+  border: 1px solid #444;
+  border-radius: 2px;
+	margin: 0 2px
+}
+.social-link.box a:hover{
+  border: 1px solid rgba(60, 148, 139,1);
+  color: rgba(60, 148, 139,1);
+}
+/* Circle */
+.social-link.circle a {
+  border: 1px solid #444;
+  border-radius: 50%;
+	margin: 0 1px
+}
+.social-link.circle a:hover {
+  border: 1px solid rgba(60, 148, 139,1);;
+}
+/* no style */
+.social-link.no-style a {
+  font-size: 17px;
+}
+
+
+/*----------------------------------------*/
+/*  4.  Second Layer CSS
+/*----------------------------------------*/
+
+.page-section.second-layer {
+  background: #f5f5f5 none repeat scroll 0 0;
+  padding-top: 80px;
+}
+.about-text {
+  padding-left: 30px;
+  position: relative;
+}
+.about-text::before {
+  background: #ddd none repeat scroll 0 0;
+  content: "";
+  height: 114%;
+  left: 0;
+  position: absolute;
+  top: -7%;
+  width: 1px;
+}
+.about-text h2 {
+  font-size: 18px;
+  line-height: 26px;
+}
+.about-text p {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 30px;
+  margin-bottom: 46px;
+  position: relative;
+}
+.about-text p::before {
+  background: #b3b3b3 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: -31px;
+  position: absolute;
+  top: 0;
+  width: 3px;
+}
+.about-info-wrapper {
+  padding-right: 30px;
+}
+
+
+.page-section.second-layer .social-link a::before {
+  border: 1px solid rgba(0,0,0,.7);
+}
+.page-section.second-layer .social-link a {
+  color: rgba(0,0,0,.7)
+}
+.page-section.second-layer .social-link a:hover{
+  color: #000
+}
+.page-section.second-layer .social-link a:hover:before{
+  border: 1px solid #000;
+}
+.about-social-link {
+  display: flex;
+  margin-top: 60px;
+}
+.about-social-link a {
+  color: #fff;
+  flex: 1 1 0;
+  font-size: 17px;
+  height: 40px;
+  line-height: 40px;
+}
+.about-social-link a.icon-facebook {
+  background: #3B5998
+}
+.about-social-link a.icon-twitter {
+  background: #1DA1F2
+}
+.about-social-link a.icon-linkedin {
+  background: #0077B5
+}
+.about-social-link a.icon-google-plus {
+  background: #CC3333
+}
+.about-social-link a.icon-pinterest {
+  background: #CB2027
+}
+.about-social-link a.icon-youtube {
+  background: #E62117
+}
+
+/*----------------------------------------*/
+/*  4.  third Layer CSS
+/*----------------------------------------*/
+.page-section.third-layer {
+  background: #f5f5f5 none repeat scroll 0 0;
+  padding-top: 70px;
+}
+.single-team {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 30px 15px;
+  transition: all .4s
+}
+.single-team:hover {
+  box-shadow: 0 17px 25px rgba(0, 0, 0, 0.13);
+  transform: translateY(-1px);
+}
+.single-team .photo {
+  background-color: #ffffff;
+  border: 3px solid #3c948b;
+  border-radius: 50px;
+  height: 100px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  width: 100px;
+}
+.single-team .details p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.single-team .details h4 {
+  color: #3c948b;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0 0 4px;
+}
+.single-team .details h6 {
+  font-size: 14px;
+  font-weight: 400;
+}
+.page-section.third-layer .social-link {
+  margin-top: 25px
+}
+
+.page-section.third-layer .social-link a {
+  color: rgba(0,0,0,.7)
+}
+.page-section.third-layer .social-link a:hover {
+  color: rgba(60, 148, 139, 1);
+}
+
+
+
+.owl-theme .owl-controls .owl-buttons div {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #3c948b;
+  border-radius: 0;
+  bottom: -36px;
+  color: #3c948b;
+  display: inline-block;
+  font-size: 17px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0;
+  opacity: 0.4;
+  padding: 0;
+  position: absolute;
+  right: 15px;
+  text-align: center;
+  width: 30px;
+}
+.owl-theme .owl-controls .owl-buttons div.owl-next {
+  right: 48px !important;
+}
+
+/*----------------------------------------*/
+/*  5.  fourth Layer CSS
+/*----------------------------------------*/
+.page-section.fourth-layer {
+  background: #f5f5f5 none repeat scroll 0 0;
+}
+.contact-area {
+  background: #fff none repeat scroll 0 0;
+  left: 15px;
+  padding: 30px;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+}
+.contact-form {
+  float: left;
+  width: 60%;
+}
+.form-head h3 {
+  color: #353535;
+  font-size: 18px;
+  margin: 0 0 19px;
+  text-transform: uppercase;
+}
+.contact-form form {
+  padding-bottom: 20px;
+}
+.contact-form form .form-group {
+  margin-bottom: 15px;
+  text-align: right;
+}
+.contact-form form .form-group input {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #ddd;
+  color: #333;
+  cursor: pointer;
+  height: 40px;
+  padding: 0 10px;
+  transition: all 0.4s ease 0s;
+  width: 100%;
+}
+  .contact-form form .form-group textarea {
+    cursor: pointer;
+    min-height: 150px;
+    padding: 10px;
+    resize: vertical;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+    border: 1px solid #ddd;
+    color: #333;
+  }
+  .contact-form form .form-group input:focus,  .contact-form form .form-group textarea:focus {
+    border: 1px solid rgba(60,148,139,1);
+    box-shadow: 0 6px 8px rgba(0,0,0,.13);
+    background: #fff;
+  }
+  .contact-form form .form-group input[type="submit"] {
+    border: 1px solid #ddd;
+    color: #333;
+    display: inline-block;
+    height: 38px;
+    padding: 0 60px;
+    text-transform: uppercase;
+    width: auto;
+  }
+  .contact-form form .form-group input[type="submit"]:hover{
+    background: rgba(60,148,139,1);
+    color: #fff;
+    border: 1px solid rgba(60,148,139,1);
+  }
+  .contact-text-wrapper {
+    float: left;
+    font-size: 14px;
+    line-height: 28px;
+    padding-left: 30px;
+    width: 40%;
+  }
+  .contact-text-wrapper .contact-text {
+    margin-bottom: 30px;
+  }
+.contact-text-wrapper .contact-text h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.contact-text-wrapper .contact-text p {
+  line-height: 25px;
+  text-align: justify;
+}
+.contact-text-wrapper h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+.contact-text-wrapper .contact-info{
+  margin-bottom: 15px;
+}
+.contact-text-wrapper .contact-info .left{
+  float: left;
+
+}
+.contact-text-wrapper  .contact-info .right{
+  margin-left: 140px;
+}
+
+#map {
+  width: 100%;
+}
+.contact-info-wrapper {
+  position: relative;
+  top: 80px;
+}
+.contact-info-wrapper .info-text {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.contact-info-wrapper .info-text{}
+  .form-wrapper {
+  }
+
+.contact-area .social-link a{
+  color: #333
+}
+
+/****************************************************************    youtube video ************************************************************************/
+.video-layout #page-wrapper .first-layer,.slider-layout  #page-wrapper .first-layer {
+  background-image: none;
+  overflow: hidden;
+}
+
+/*
+.video-layout .page-section.first-layer .layer-wrapper::after {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+
+.slider-layout .page-section.first-layer .layer-wrapper::after {
+  background: rgba(0, 0, 0, .8) none repeat scroll 0 0;
+}
+*/
+
+
+
+
+
+
+
+/* Font face*/
+@font-face {
+  font-family: 'tradegothic';
+  src: url('fonts/tradegothic.woff2');
+}
+
+
+
+
+
+
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
