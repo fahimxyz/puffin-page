@@ -1,7 +1,7 @@
 # Puffin Page
 Ultimate Responsive Coming Soon Template
 
-![Puffin Page](src/intro-banner.jpg?raw=true "Intro Image")
+![Puffin Page](img/intro-banner.jpg?raw=true "Intro Image")
 
 Puffin Page is a modern, responsive, and clean coming soon/under construction HTML template. This minimal template comes in 3 versions: image background, image slider background and YouTube video background.
 
@@ -18,5 +18,9 @@ Puffin Page is a modern, responsive, and clean coming soon/under construction HT
 * Social icons
 
 ## Screenshot
+
+
+![Static Image](img/image.jpg?raw=true "Static Image") ![Slider Image](img/slider.jpg?raw=true "Slider Image") 
+![Youtuobe Video](img/youtube.jpg?raw=true "Youtuobe Video")
 
 
