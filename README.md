@@ -18,5 +18,9 @@ Puffin Page is a modern, responsive, and clean coming soon/under construction HT
 * Social icons
 
 ## Screenshot
-
-
+### Static Image
+![Static Image](src/image.jpg?raw=true "Static Image") 
+### Slider Image
+![Slider Image](src/slider.jpg?raw=true "Slider Image")
+### Youtuobe Video
+![Youtuobe Video](src/youtube.jpg?raw=true "Youtuobe Video")
