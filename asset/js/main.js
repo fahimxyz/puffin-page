@@ -1,38 +1,7 @@
 (function ($) {
  "use strict";
 
-// Jquery code for contact-area height
-var x=$( window ).height();
-$(".g-map").css("height", x-60);
-$(".contact-area").css("height", x-137);
-
-
-// about us grid activation
-$('#ri-grid').gridrotator( {
-    rows		: 3,
-    columns		: 3,
-    animType	: 'fadeInOut',
-    animSpeed	: 2000,
-    interval	: 3000,
-    step		: 3,
-    w320		: {
-    	rows	: 3,
-    	columns	: 3
-    },
-    w240		: {
-    	rows	: 3,
-    	columns	: 3
-    },
-    w480		: {
-     rows	: 3,
-     columns	: 4
-    },
-    w768		: {
-     rows	: 3,
-     columns	:4
-    }
-} );
-
+if($( window ).width()>766){
 // pagepiling activation
  $('#page-wrapper').pagepiling({
          menu: null,
@@ -63,6 +32,38 @@ $('#ri-grid').gridrotator( {
          afterRender: function(){},
      });
 
+     // Jquery code for contact-area height
+     var x=$( window ).height();
+     $(".g-map").css("height", x-60);
+     $(".contact-area").css("height", x-137);
+}
+
+
+// about us grid activation
+$('#ri-grid').gridrotator( {
+    rows		: 3,
+    columns		: 3,
+    animType	: 'random',
+    animSpeed	: 2000,
+    interval	: 3000,
+    step		: 3,
+    w320		: {
+    	rows	: 3,
+    	columns	: 3
+    },
+    w240		: {
+    	rows	: 3,
+    	columns	: 3
+    },
+    w480		: {
+     rows	: 3,
+     columns	: 4
+    },
+    w768		: {
+     rows	: 3,
+     columns	:4
+    }
+} );
 
    /*----------------------------
    team carousel active

@@ -19,10 +19,147 @@
   width: 140px;
 }
 .first-layer .layer-content .intro-text h2 {
-  font-size: 30px;
+  font-size: 25px;
+  margin: 20px 0 15px;
 }
 .first-layer .layer-content .intro-text p {
-  font-size: 17px;
+  font-size: 15px;
+}
+.page-section .layer-wrapper {
+
+}
+.first-layer .countdown-area div {
+  border: 0 none;
+  margin-top: 0;
+  padding: 0;
+}
+.email-hunter form {
+  margin-top: 30px;
+  width: 100%;
+}
+.email-hunter button {
+  background: #3c948b none repeat scroll 0 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  height: 36px;
+  left: 0;
+  padding: 0;
+  top: 46px;
+  width: 100%;
+}
+.social-link {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+.page-section.second-layer {
+  padding-top: 0;
+}
+.page-title {
+  position: static;
+}
+.page-title h1 {
+  margin: 0;
+  opacity: 1;
+  text-align: center;
+}
+.about-text p::before,.about-text::before {
+  opacity: 0;
+}
+.about-text p {
+  text-align: center;
+}
+.about-info-wrapper {
+  padding-right: 0;
+}
+.ri-grid ul {
+  border: 1px solid #777;
+  margin: 40px 0 0;
+  padding: 0;
+}
+.first-layer .countdown-area .cdown {
+  background: #3c948b none repeat scroll 0 0;
+  border-radius: 2px;
+  padding: 5px 15px;
+}
+.first-layer .countdown-area .cdown .time-count {
+  font-size: 18px;
+}
+.first-layer .countdown-area .cdown p {
+  font-size: 12px;
+  margin: 0;
+}
+.about-text {
+  padding-left: 0;
+  padding-top: 45px;
+}
+.page-section.third-layer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.page-section.fourth-layer {
+  padding-top: 25px;
+  position: relative;
+}
+.contact-info-wrapper {
+  top: 0;
+}
+.contact-area {
+  background: #fff none repeat scroll 0 0;
+  padding: 40px 0 0;
+  position: static;
+  width: 100%;
+}
+.contact-form {
+  float: none;
+  width: 100%;
+}
+.carousel-active.owl-carousel.owl-theme {
+  margin-top: 40px;
+}
+.form-head h3 {
+  display: none;
+}
+.contact-form form .form-group {
+  text-align: center;
+}
+.contact-text-wrapper {
+  float: none;
+  padding-left: 0;
+  width: 100%;
+  text-align: center;
+}
+.contact-form form .form-group input[type="submit"] {
+  background: rgba(60, 140, 139, 1) none repeat scroll 0 0;
+  border: medium none;
+  color: #fff;
+  display: inline-block;
+  height: 38px;
+  padding: 0 60px;
+  text-transform: uppercase;
+  width: auto;
+}
+.contact-info-wrapper .info-text {
+  position: static;
+}
+#map {
+  height: 250px;
+  width: 100%;
+  position: absolute!important;
+  bottom: -250px;
+}
+.contact-area .social-link {
+  margin: 0;
+  padding-bottom: 30px;
+}
+.contact-area .contact-text:last-child {
+  margin: 0;
+}
+.form-wrapper {
+  padding: 0 10px;
+}
+.first-layer .logo {
+  position: relative;
+  padding-top: 30px;
 }
 }
 
@@ -31,41 +168,3 @@
 .container {width:450px}
 
 }
-
-
-
-/*
-
-@media (max-height: 900px)  {
-.first-layer .layer-content {
-    top: 70px;
-  }
-.first-layer .layer-content .intro-text h2 {
-  font-size: 48px;
-  margin-bottom: 18px;
-  margin-top: 8px;
-}
-
-.contact-form form .form-group {
-  margin-bottom: 15px;
-}
-.title h1 {
-  margin-bottom: 46px;
-}
-.contact-form form .form-group textarea {
-  min-height: 165px;
-}
-}
-
-@media (max-height: 768px)  {
-  .first-layer .layer-content {
-      top: 40px;
-    }
-    .page-section.fourth-layer {
-      padding-top: 40px;
-    }
-.page-section.second-layer {
-  padding-top: 60px;
-}
-}
-*/
